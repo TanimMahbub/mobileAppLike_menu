@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Sliding Menu</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav>
+        <menu class="mm">
+            <div class="menu-level level-1" id="main-menu">
+                <ul>
+                    <li><button class="menu-item" data-target="history-menu">History →</button></li>
+                    <li><button class="menu-item" data-target="downloads-menu">Downloads →</button></li>
+                    <li><button>Passwords</button></li>
+                    <li><button>Add-ons and themes</button></li>
+                    <li><button>Print...</button></li>
+                    <li><button>Save page as...</button></li>
+                    <li><button>Find in page...</button></li>
+                    <li><button>Zoom</button></li>
+                    <li><button>Settings</button></li>
+                    <li><button>More tools</button></li>
+                    <li><button>Help</button></li>
+                    <li><button>Exit</button></li>
+                </ul>
+            </div>
+    
+            <div class="menu-level level-2" id="history-menu">
+                <div class="menu-header">
+                    <button class="back-button">← Back</button>
+                    <span class="menu-title"></span>
+                </div>
+                <ul>
+                    <li><button class="menu-item" data-target="recent-tabs-menu">Recently closed tabs →</button></li>
+                    <li><button class="menu-item" data-target="recent-windows-menu">Recently closed windows →</button></li>
+                    <li><button>Search history</button></li>
+                    <li><button>Clear recent history...</button></li>
+                    <li><button>Manage history</button></li>
+                </ul>
+            </div>
+    
+            <div class="menu-level level-2" id="downloads-menu">
+                <div class="menu-header">
+                    <button class="back-button">← Back</button>
+                    <span class="menu-title"></span>
+                </div>
+                <ul>
+                    <li><button class="menu-item" data-target="current-downloads-menu">Current Downloads →</button></li>
+                    <li><button>Past Downloads</button></li>
+                    <li><button>Download Settings</button></li>
+                </ul>
+            </div>
+    
+            <div class="menu-level level-3" id="recent-tabs-menu">
+                <div class="menu-header">
+                    <button class="back-button">← Back</button>
+                    <span class="menu-title"></span>
+                </div>
+                <ul>
+                    <li><button>Tab 1</button></li>
+                    <li><button>Tab 2</button></li>
+                    <li><button>Tab 3</button></li>
+                </ul>
+            </div>
+    
+            <div class="menu-level level-3" id="recent-windows-menu">
+                <div class="menu-header">
+                    <button class="back-button">← Back</button>
+                    <span class="menu-title"></span>
+                </div>
+                <ul>
+                    <li><button>Window 1</button></li>
+                    <li><button>Window 2</button></li>
+                    <li><button>Window 3</button></li>
+                    <li><button class="menu-item" data-target="more-tools">More Tools →</button></li>
+                </ul>
+            </div>
+    
+            <div class="menu-level level-3" id="current-downloads-menu">
+                <div class="menu-header">
+                    <button class="back-button">← Back</button>
+                    <span class="menu-title"></span>
+                </div>
+                <ul>
+                    <li><button>File 1</button></li>
+                    <li><button>File 2</button></li>
+                    <li><button>File 3</button></li>
+                </ul>
+            </div>
+    
+            <div class="menu-level level-4" id="more-tools">
+                <div class="menu-header">
+                    <button class="back-button">← Back</button>
+                    <span class="menu-title"></span>
+                </div>
+                <ul>
+                    <li><button>Tool 1</button></li>
+                    <li><button>Tool 2</button></li>
+                    <li><button>Tool 3</button></li>
+                </ul>
+            </div>
+        </menu>
+    </nav>
+    <script src="app.js"></script>
+</body>
+</html>
